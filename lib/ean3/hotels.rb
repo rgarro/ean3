@@ -36,8 +36,8 @@ module Ean3
     # Request Hotel Infomation
     #
     #
-    def getInformation
-      response = conncetion.get do |req|
+    def getInformation(options={})
+      response = connection.get do |req|
         req.url "info", options
       end
       return_error_or_body(response, response.body)
