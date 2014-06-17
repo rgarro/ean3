@@ -30,7 +30,7 @@ module Ean3
       if @ssl
         "https://book.api.ean.com/ean-services/rs/hotel/#{version}/"
       else
-        "http://api.ean.com/ean-services/rs/hotel/#{version}/"
+        "http://dev.api.ean.com/ean-services/rs/hotel/#{version}/"
       end
     end
 
